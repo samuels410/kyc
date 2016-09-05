@@ -6,7 +6,7 @@ class CreateCustomers < ActiveRecord::Migration[5.0]
       t.string :pan
       t.string :aadhar_card_number
       t.date :date_of_birth
-      t.integer :phone , :limit => 12
+      t.bigint :phone
       t.text :address
       t.string :email
       t.timestamps
